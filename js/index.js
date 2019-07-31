@@ -7,12 +7,19 @@
 
 // alert("The sum of your two numbers is " + add(number1, number2));
 
-function bmiCalculator(weight, height) {
-  var bmi = Math.round(weight / Math.pow(height, 2));
-  return (bmi);
+// function bmiCalculator(weight, height) {
+//   var bmi = Math.round(weight / Math.pow(height, 2));
+//   return (bmi);
+// }
+
+// var weight = parseInt(prompt("Enter your Weight in Kgs"));
+// var height = parseInt(prompt("Enter your Height in Meters"));
+
+// alert("Your BMI is " + bmiCalculator(weight, height));
+
+
+function toFahrenheit(celsius) {
+  return (celsius * (9 / 5) + 32);
 }
-
-var weight = parseInt(prompt("Enter your Weight in Kgs"));
-var height = parseInt(prompt("Enter your Height in Meters"));
-
-alert("Your BMI is " + bmiCalculator(weight, height));
+var celsius = parseInt(prompt("Enter your temperature in Celsius"));
+alert("Your temperature in Fahrenheit is " + toFahrenheit(celsius));
