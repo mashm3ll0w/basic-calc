@@ -18,8 +18,16 @@
 // alert("Your BMI is " + bmiCalculator(weight, height));
 
 
-function toFahrenheit(celsius) {
-  return (celsius * (9 / 5) + 32);
+// function toFahrenheit(celsius) {
+//   return (celsius * (9 / 5) + 32);
+// }
+// var celsius = parseInt(prompt("Enter your temperature in Celsius"));
+// alert("Your temperature in Fahrenheit is " + toFahrenheit(celsius));
+
+
+function toCelsius(fahrenheit) {
+  return ((fahrenheit - 32) * (5 / 9));
 }
-var celsius = parseInt(prompt("Enter your temperature in Celsius"));
-alert("Your temperature in Fahrenheit is " + toFahrenheit(celsius));
+
+var fahrenheit = parseInt(prompt("Enter your temperature in Fahrenheit"));
+alert("Your tempurature in Celsius is " + toCelsius(fahrenheit));
